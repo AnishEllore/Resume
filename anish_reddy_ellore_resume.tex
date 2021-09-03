@@ -1,0 +1,234 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%Hyperlink color
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor= blue,
+}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItemAnish}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubheadingAnish}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} \small #5& \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\newcommand{\resumeSubItemAnish}[1]{\resumeItemAnish{#1}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://anishellore.github.io/}{\Large Anish Reddy Ellore}} & Email : \href{mailto:anishellore@vt.edu}{anishellore@vt.edu}\\
+  \href{https://anishellore.github.io/}{anishellore.github.io} $\vert$ \href{https://www.linkedin.com/in/anish-ellore/}{LinkedIn}
+  $\vert$ \href{https://scholar.google.com/citations?user=V6Iv8H4AAAAJ&hl=en}{Google Scholar}  & Mobile : +1-540-824-8507\\
+\end{tabular*}
+
+%-----------Research Interests----------_%
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Virginia Tech}{Blacksburg, VA}
+      {Master of Science in Computer Science; Fall 21 Courses: Operating Systems, Data Analytics}{Aug. 2021 -- Present}
+    \resumeSubheading
+      {Birla Institute of Technology and Science Pilani}{Hyderabad, India}
+      {Bachelor of Engineering in Computer Science;  GPA: 8.14/10.0}{Aug. 2016 -- July. 2020}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {OPPO Research and Development Centre}{Hyderabad, India}
+      {Software Engineer}{Sept 2020 - July 2021}
+      \resumeItemListStart
+        \resumeItemAnish
+          {Solved WLAN Power Issues, fixed critical Android R OS upgrade bugs, improved WIFI and Hotspot stability}
+        \resumeItemAnish
+          {Collaborated with Qualcomm and Chinese counterpart teams on a day to day basis for the job}
+      \resumeItemListEnd
+      
+% --------Multiple Positions Heading------------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheadingAnish
+      {Publicis Sapient}{Bangalore, India}
+      {Software Engineering Intern}{May 2019 - July 2019}{\href{https://drive.google.com/file/d/1D6R7Bl6qonqYFZcYuvE8z8AdL1SRHHKO/view?usp=sharing}{slides}}
+      \resumeItemListStart
+        \resumeItemAnish
+          {Developed a near real-time stream processing application to ingest the data and generate KPIs}
+          \resumeItemAnish
+          {Predicted customer seasonal purchase patterns by merging our KPIs with publicly avaliable census data which lead to a very interesting results about holidays. For this initiative, our team was commended by the company leaders}
+      \resumeItemListEnd
+      
+      \resumeSubheadingAnish
+      {PASS Consulting}{Hyderabad, India}
+      {Software Engineering Intern}{May 2018 - July 2018}{\href{https://drive.google.com/file/d/1o7V0hz4_0k_vaSlt1wN5h3kh7zsk9JS2/view?usp=sharing}{slides}}
+      \resumeItemListStart
+        \resumeItemAnish
+          {Developed a python application to visualize water tanks dependencies and optimize water distribution schedule. This helped to improve the water management in the State of Telangana}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------Publications-----------
+\section{Publications and Presentations}
+  \resumeSubHeadingListStart
+    \resumeSubItemAnish{A. Kasturi, \textbf{A. R. Ellore}, and C. Hota, “ Fusion Learning: A One shot Federated Learning”, 20th International Conference in Computational Sciences, Amsterdam, Netherlands, June 2020. \href{https://link.springer.com/chapter/10.1007/978-3-030-50420-5_31}{pdf}}
+      
+    \resumeSubItemAnish{A. Kasturi, \textbf{A. R. Ellore}, P. Saxena, and C. Hota, “ Hybrid Fusion Learning: A Hierarchical Learning Model for Distributed Systems”, 4th International Workshop on Deep Learning for Mobile Systems and Applications (26th MobiCom 2020), ACM, London, Sept 2020. \href{https://dl.acm.org/doi/10.1145/3410338.3412339}{pdf}}
+      
+    \resumeSubItemAnish{\textbf{A. R. Ellore}, S. Mishra, and C. Hota, “ Sequential Anomaly Detection using Feedback and Prioritized Experience Replay”, 14th International Conference on Network and System Security, Melbourne, Australia, Nov 2020. \href{https://link.springer.com/chapter/10.1007/978-3-030-65745-1_14}{pdf}}
+      
+    \resumeSubItemAnish{\textbf{A. R. Ellore}, A. Kasturi, P. Saxena, and C. Hota, “ OSGAN: One Shot Distributed Learning using General Adversarial Networks”. (Conference paper in preparation)}
+      
+    \resumeSubItemAnish{\textbf{Anish Reddy Ellore}. Oral Presentation for the Sequential Anomaly Detection paper at the 14th International Conference on Network and System Security, Melbourne, Australia, Nov 2020. \href{https://drive.google.com/file/d/1s797gxZgE6ScddVtlFxJutFWQ1DBp3nR/view?usp=sharing}{slides}}
+   
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Performance Analysis of TCP variants in congested networks}
+      {In this project, we designed an environment with an asynchronous-event-driven server and clients to simulate congestion in the network. In our results, we found TCP reno to be performing well under different types of network congestion. \href{https://github.com/AnishEllore/Performance-Analysis-of-TCP-variants-in-congested-networks}{code}}
+
+    \resumeSubItem{Analysis of search engine variants$\vert$Information Retrieval}
+      {Developed two search engines using vector space model and Locality Sensitive Hashing on the bible dataset. In our comparison, we found the LSH variant to be very fast and accurate than the vector-space variant. \href{https://github.com/AnishEllore/LocalitySensitiveHashing}{code}}
+
+    % \resumeSubItem{Analysis of Convex Hull finding Algorithms|Advanced Algorithms}
+    %   {Implemented Kirkpatrick–Seidel, Jarvis-March, and Graham Scan algorithms from scratch to analyzing their performance and working on different types of data sizes and shapes.}
+
+    \resumeSubItem{Time Cards Management System$\vert$Software Engineering}
+      {Created a web application to help companies track employees time cards, leaves, and generate salaries. \href{https://github.com/AnishEllore/Time-Cards-Management-System}{code}}
+   
+  \resumeSubHeadingListEnd
+
+
+%--------Skills and Interests------------
+\section{Skills and Interests}
+ \resumeSubHeadingListStart
+   \resumeSubItemAnish{
+     \textbf{Languages}{: C++, Java, Python, Scala, SQL}
+     \hfill
+     \textbf{Technologies}{: Spark Structured Streaming, Tensorflow, Git, Flask, Azure, Latex}
+   }
+   \resumeSubItemAnish{
+     \textbf{Courses}{: Foundations of Data Science, Operating Systems, Machine Learning, Data Mining, Information Retrieval, Network Programming, Software Engineering}
+   }
+   \resumeSubItemAnish{
+     \textbf{Research Interests}{: Federated Learning, Distributed Systems, General Adversarial Networks, Reinforcement Learning, Privacy}
+   }
+   
+ \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
